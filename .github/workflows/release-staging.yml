@@ -34,7 +34,7 @@ jobs:
         run: bun compile
 
       - name: Build project
-        run: bun build
+        run: rojo build ./build.project.json --output game.rbxlx
 
       - name: Upload place artifact
         uses: actions/upload-artifact@v4
