@@ -1,0 +1,73 @@
+owner: personal
+
+environments:
+  - label: staging
+    targetNamePrefix: environmentLabel
+    targetAccess: private
+    targetOverrides:
+      icon: assets/marketing/game_icon_staging.jpg
+      thumbnails: [assets/marketing/game_thumbnail.jpg]
+      places:
+        start:
+          configuration:
+            name: "[Dev] Untitled Game 🚧"
+            description: |
+              This is a development build. Your feedback is appreciated ❤️
+
+              🚧  Proceed with caution: You may encounter bugs, data resets, and instability.
+              🔥  Take a look at upcoming features before they're shipped to production.
+              🤝  Send your feedback to the group wall or the linked socials!
+            maxPlayerCount: 20
+  - label: production
+    branches: [main]
+    targetAccess: public
+
+target:
+  experience:
+    icon: assets/marketing/game_icon.png
+    thumbnails: [assets/marketing/game_thumbnail.jpg]
+    configuration:
+      playableDevices: [computer, console, phone, tablet]
+      privateServers:
+        price: 10
+      enableStudioAccessToApis: true
+      avatarType: r6
+    spatialVoice:
+      enabled: true
+    places:
+      start:
+        file: game.rbxl
+        configuration:
+          name: Untitled Game
+          description: |
+            Untitled Game 
+
+            Please like ❤️ and favorite ⭐️ if you enjoyed!
+            Follow 🔔 to be notified of new updates!
+          maxPlayerCount: 25
+    products:
+      money-100:
+        price: 10
+        name: $100
+        description: Buy $100!
+        icon: assets/marketing/game_icon.png
+      money-250:
+        price: 20
+        name: $250
+        description: Buy $250!
+        icon: assets/marketing/game_icon.png
+      money-500:
+        price: 40
+        name: $500
+        description: Buy $500!
+        icon: assets/marketing/game_icon.png
+      money-1000:
+        price: 80
+        name: $1,000
+        description: Buy $1,000!
+        icon: assets/marketing/game_icon.png
+      money-5000:
+        price: 375
+        name: $5,000
+        description: Buy $5,000!
+        icon: assets/marketing/game_icon.png
