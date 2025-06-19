@@ -32,7 +32,7 @@ jobs:
         run: bun prod:build
 
       - name: Build project
-        run: rojo build ./build.project.json --output game.rbxlx
+        run: rojo build ./build.project.json --output game.rbxl
 
       - name: Upload place artifact
         uses: actions/upload-artifact@v4
