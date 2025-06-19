@@ -6,7 +6,9 @@
 		"useIgnoreFile": true
 	},
 	"assist": { "actions": { "source": { "organizeImports": "on" } } },
-	"files": {},
+	"files": {
+		"includes": ["src/**"]
+	},
 	"linter": {
 		"enabled": true,
 		"rules": {
@@ -29,5 +31,14 @@
 				"noInvalidUseBeforeDeclaration": "off"
 			}
 		}
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"attributePosition": "auto",
+		"indentStyle": "tab",
+		"indentWidth": 2,
+		"lineWidth": 80,
+		"lineEnding": "lf"
 	}
 }
