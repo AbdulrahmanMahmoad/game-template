@@ -26,10 +26,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Compile
-        run: bun compile
+        run: bun prod:build
 
       - name: Build project
-        run: bun build
+        run: rojo build ./build.project.json --output place.rbxlx
 
       - name: Upload place artifact
         uses: actions/upload-artifact@v4
