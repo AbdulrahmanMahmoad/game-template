@@ -1,4 +1,12 @@
 owner: personal
+state:
+  remote:
+    region:
+      custom:
+        name: oregon
+        endpoint: t4r6.or7.idrivee2-67.com
+    bucket: game-mantle-states
+    key: game
 
 environments:
   - label: staging
