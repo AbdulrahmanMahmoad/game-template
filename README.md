@@ -5,9 +5,9 @@ Game template
 - Bun
 
 # Getting started:
-- 'rokit i'
-- 'bun i'
+- `rokit i`
+- `bun i`
 
 # Start developing
-- 'bun start'
-- 'bun models'
+- `bun start`
+- `bun models`
