@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -41,7 +41,7 @@ jobs:
           path: game.rbxl
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     environment: production
     needs: build
 
