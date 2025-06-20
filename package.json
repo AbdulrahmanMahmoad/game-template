@@ -22,10 +22,10 @@
 		"start": "rbxts-build start",
 		"stop": "rbxts-build stop",
 		"sync": "rbxts-build sync",
-		"models": "bun nodemon -w game.rbxl --exec lune run scripts/syncModels.luau",
+		"models": "syncback-lfs watch --input game.rbxl",
 		"prod:build": "npm run clean && NODE_ENV=production && npx rbxtsc --verbose && npm run darklua",
 		"prod:sync": "rojo serve ./build.project.json",
-		"clean": "npx rimraf out/ && npx rimraf dist",
+		"clean": "npx rimraf out/ && npx rimraf dist && npx rimraf game.rbxl && npx rimraf game.rbxl.lock",
 		"darklua": "darklua process out dist --verbose"
 	},
 	"dependencies": {
