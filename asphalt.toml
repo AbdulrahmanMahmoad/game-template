@@ -7,7 +7,6 @@ type = "user"
 id = 1
 
 [codegen]
-output_name = "index"
 typescript = true
 style = "flat"
-strip_extension = false
+strip_extension = true
