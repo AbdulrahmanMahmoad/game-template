@@ -1,3 +1,5 @@
-import { makeHello } from "shared/module";
+import { Flamework } from "@flamework/core";
 
-print(makeHello("main.client.ts"));
+Flamework.addPaths("src/client");
+
+Flamework.ignite();
