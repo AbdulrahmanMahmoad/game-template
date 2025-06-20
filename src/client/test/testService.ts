@@ -1,8 +1,8 @@
-import { OnStart, Service } from "@flamework/core";
+import { Controller, OnStart } from "@flamework/core";
 
-@Service({})
+@Controller({})
 export class TestService implements OnStart {
 	onStart() {
-    print("TestService has started!");
-  }
+		print("TestService has started!");
+	}
 }
