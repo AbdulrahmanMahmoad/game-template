@@ -28,7 +28,7 @@
 		"prod:sync": "rojo serve ./build.project.json",
 		"clean": "npx rimraf out/ && npx rimraf dist && npx rimraf game.rbxl && npx rimraf game.rbxl.lock",
 		"darklua": "darklua process out dist --verbose",
-		"lint": "biome check ./src"
+		"lint": "biome lint ./src"
 	},
 	"dependencies": {
 		"@flamework/components": "^1.3.1",
