@@ -11,7 +11,8 @@ permissions:
   packages: write
 
 jobs:
-  build:
+  lint:
+    name: Lint and format
     runs-on: windows-latest
 
     steps:
@@ -26,7 +27,7 @@ jobs:
         run: bun install
 
       - name: Lint
-        run: bunx biome check ./src
+        run: bun lint
 
       - name: Compile
         run: bun compile

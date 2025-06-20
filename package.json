@@ -26,7 +26,8 @@
 		"prod:build": "npm run clean && NODE_ENV=production && npx rbxtsc --verbose && npm run darklua",
 		"prod:sync": "rojo serve ./build.project.json",
 		"clean": "npx rimraf out/ && npx rimraf dist && npx rimraf game.rbxl && npx rimraf game.rbxl.lock",
-		"darklua": "darklua process out dist --verbose"
+		"darklua": "darklua process out dist --verbose",
+		"lint": "biome check ./src"
 	},
 	"dependencies": {
 		"nodemon": "^3.1.10"
