@@ -28,9 +28,5 @@
 				"noInvalidUseBeforeDeclaration": "off"
 			}
 		}
-	},
-	"formatter": {
-		"enabled": true,
-		"formatWithErrors": true
 	}
 }
